@@ -8,7 +8,7 @@ export default class Location extends URL {
 	 * Constructor.
 	 */
 	constructor() {
-		super('about:blank');
+		super('https://localhost');
 	}
 
 	/**

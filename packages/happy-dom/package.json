@@ -1,6 +1,6 @@
 {
 	"name": "happy-dom",
-	"version": "0.0.0",
+	"version": "8.9.0-rtvision",
 	"license": "MIT",
 	"homepage": "https://github.com/capricorn86/happy-dom",
 	"repository": "https://github.com/capricorn86/happy-dom",
@@ -20,7 +20,8 @@
 		"w3c"
 	],
 	"publishConfig": {
-		"access": "public"
+		"access": "public",
+		"registry": "https://npm-registry.rtvision.com"
 	},
 	"scripts": {
 		"compile": "tsc",
@@ -34,7 +35,12 @@
 	},
 	"jest": {
 		"transform": {
-			"^.+\\.ts?$": ["ts-jest", { "tsconfig": "./test/tsconfig.json" }]
+			"^.+\\.ts?$": [
+				"ts-jest",
+				{
+					"tsconfig": "./test/tsconfig.json"
+				}
+			]
 		},
 		"testMatch": [
 			"**/test/**/*.test.ts"
@@ -48,7 +54,7 @@
 		"webidl-conversions": "^7.0.0",
 		"whatwg-encoding": "^2.0.0",
 		"whatwg-mimetype": "^3.0.0",
-	  	"iconv-lite": "^0.6.3"
+		"iconv-lite": "^0.6.3"
 	},
 	"devDependencies": {
 		"@types/he": "^1.1.2",
